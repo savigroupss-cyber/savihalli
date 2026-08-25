@@ -1,0 +1,261 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * SAVI HALLI THUPPA — "The Taste of Old Karnataka" design system.
+ * Palette: Dark Forest Green #0B3D2E · Cream #F8F2E8 · Gold #C89B3C · Brown #5A3E2B
+ * Headings: Playfair Display · Body: Poppins
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+
+  --color-forest: var(--forest);
+  --color-forest-deep: var(--forest-deep);
+  --color-cream: var(--cream);
+  --color-cream-dim: var(--cream-dim);
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --color-brown: var(--brown);
+
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --radius: 0.25rem;
+
+  --forest: oklch(0.322 0.062 158.5);
+  --forest-deep: oklch(0.238 0.05 158.5);
+  --cream: oklch(0.963 0.017 84.6);
+  --cream-dim: oklch(0.918 0.024 84.6);
+  --gold: oklch(0.716 0.113 78.5);
+  --gold-soft: oklch(0.828 0.078 82);
+  --brown: oklch(0.398 0.048 55);
+
+  --background: var(--cream);
+  --foreground: var(--forest-deep);
+  --card: oklch(0.985 0.01 84.6);
+  --card-foreground: var(--forest-deep);
+  --popover: var(--cream);
+  --popover-foreground: var(--forest-deep);
+  --primary: var(--forest);
+  --primary-foreground: var(--cream);
+  --secondary: var(--cream-dim);
+  --secondary-foreground: var(--brown);
+  --muted: var(--cream-dim);
+  --muted-foreground: oklch(0.5 0.035 60);
+  --accent: var(--gold);
+  --accent-foreground: var(--forest-deep);
+  --destructive: oklch(0.55 0.19 27);
+  --destructive-foreground: oklch(0.99 0 0);
+  --border: oklch(0.86 0.028 80);
+  --input: oklch(0.86 0.028 80);
+  --ring: var(--gold);
+
+  --shadow-warm: 0 18px 50px -22px oklch(0.398 0.048 55 / 0.45);
+  --shadow-gold: 0 0 0 1px oklch(0.716 0.113 78.5 / 0.45), 0 22px 60px -28px oklch(0.716 0.113 78.5 / 0.5);
+  --gradient-forest: linear-gradient(160deg, var(--forest) 0%, var(--forest-deep) 100%);
+  --gradient-gold: linear-gradient(100deg, var(--gold) 0%, var(--gold-soft) 50%, var(--gold) 100%);
+
+  --chart-1: var(--gold);
+  --chart-2: var(--forest);
+  --chart-3: var(--brown);
+  --chart-4: var(--gold-soft);
+  --chart-5: var(--cream-dim);
+  --sidebar: var(--forest);
+  --sidebar-foreground: var(--cream);
+  --sidebar-primary: var(--gold);
+  --sidebar-primary-foreground: var(--forest-deep);
+  --sidebar-accent: var(--forest-deep);
+  --sidebar-accent-foreground: var(--cream);
+  --sidebar-border: oklch(1 0 0 / 12%);
+  --sidebar-ring: var(--gold);
+}
+
+.dark {
+  --background: var(--forest-deep);
+  --foreground: var(--cream);
+  --card: var(--forest);
+  --card-foreground: var(--cream);
+  --popover: var(--forest);
+  --popover-foreground: var(--cream);
+  --primary: var(--gold);
+  --primary-foreground: var(--forest-deep);
+  --secondary: var(--forest);
+  --secondary-foreground: var(--cream);
+  --muted: var(--forest);
+  --muted-foreground: oklch(0.78 0.03 84);
+  --accent: var(--gold);
+  --accent-foreground: var(--forest-deep);
+  --border: oklch(1 0 0 / 14%);
+  --input: oklch(1 0 0 / 18%);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  blockquote {
+    font-family: var(--font-display);
+    font-weight: 500;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* ---------- Utilities ---------- */
+
+@utility surface-forest {
+  background-image: var(--gradient-forest);
+  color: var(--cream);
+}
+
+@utility text-gold-gradient {
+  background-image: var(--gradient-gold);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+@utility rule-gold {
+  height: 1px;
+  width: 4rem;
+  background-image: var(--gradient-gold);
+}
+
+@utility grain {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.05;
+    background-image: radial-gradient(oklch(0.398 0.048 55) 1px, transparent 1px);
+    background-size: 4px 4px;
+  }
+}
+
+@utility reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@utility reveal-in {
+  opacity: 1;
+  transform: none;
+}
+
+@utility card-warm {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-warm);
+}
+
+@keyframes slow-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes float-y {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes ken-burns {
+  0% {
+    transform: scale(1.05) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: scale(1.18) translate3d(-1.5%, -1.5%, 0);
+  }
+}
+
+@utility animate-ken-burns {
+  animation: ken-burns 26s ease-in-out infinite alternate;
+}
+
+@utility animate-float-y {
+  animation: float-y 6s ease-in-out infinite;
+}
+
+@utility animate-slow-spin {
+  animation: slow-spin 26s linear infinite;
+}
