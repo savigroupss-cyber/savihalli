@@ -139,7 +139,7 @@ const faqs = [
   },
   {
     q: "Shipping?",
-    a: "We dispatch across India within 48 hours of your order, with tracking sent over WhatsApp. Cash on delivery is available on most pin codes.",
+    a: "We dispatch across India within 48 hours of your order, with tracking sent over WhatsApp.",
   },
 ];
 

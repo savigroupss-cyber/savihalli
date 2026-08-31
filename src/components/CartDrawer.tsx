@@ -19,7 +19,7 @@ type Form = Record<string, string>;
 export function CartDrawer() {
   const { items, open, setOpen, total, setQty, remove, clear } = useCart();
   const [form, setForm] = useState<Form>({});
-  const [payment, setPayment] = useState("Cash on Delivery");
+  const [payment, setPayment] = useState("UPI / Bank Transfer");
   const [notes, setNotes] = useState("");
   const [placed, setPlaced] = useState(false);
 
@@ -189,7 +189,6 @@ export function CartDrawer() {
                       onChange={(e) => setPayment(e.target.value)}
                       className="mt-2 w-full border border-input bg-card px-4 py-3 text-sm text-forest focus:border-gold focus:outline-none"
                     >
-                      <option>Cash on Delivery</option>
                       <option>UPI / Bank Transfer</option>
                     </select>
                   </div>
