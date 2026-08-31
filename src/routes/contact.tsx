@@ -23,6 +23,36 @@ export const Route = createFileRoute("/contact")({
 
 function Contact() {
   const [sent, setSent] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const subject = `New enquiry from ${formData.name}`;
+    const body = [
+      `Name: ${formData.name}`,
+      `Phone: ${formData.phone}`,
+      `Email: ${formData.email}`,
+      "",
+      "Message:",
+      formData.message,
+    ].join("\n");
+
+    const mailtoLink = `mailto:savigroupss@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
+    setSent(true);
+  };
 
   return (
     <main>
@@ -49,13 +79,7 @@ function Contact() {
                 within a day.
               </p>
             ) : (
-              <form
-                className="mt-9 grid gap-5"
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  setSent(true);
-                }}
-              >
+              <form className="mt-9 grid gap-5" onSubmit={handleSubmit}>
                 {[
                   { id: "name", label: "Name", type: "text" },
                   { id: "phone", label: "Phone", type: "tel" },
@@ -70,7 +94,10 @@ function Contact() {
                     </label>
                     <input
                       id={f.id}
+                      name={f.id}
                       type={f.type}
+                      value={formData[f.id as keyof typeof formData]}
+                      onChange={handleChange}
                       required
                       className="mt-2 w-full border border-input bg-card px-4 py-3 text-sm text-forest focus:border-gold focus:outline-none"
                     />
@@ -85,7 +112,10 @@ function Contact() {
                   </label>
                   <textarea
                     id="msg"
+                    name="message"
                     rows={5}
+                    value={formData.message}
+                    onChange={handleChange}
                     required
                     className="mt-2 w-full border border-input bg-card px-4 py-3 text-sm text-forest focus:border-gold focus:outline-none"
                   />
@@ -103,11 +133,10 @@ function Contact() {
             <div className="mt-6 rule-gold" />
             <dl className="mt-9 divide-y divide-border border-y border-border text-sm">
               {[
-                ["Address", "Savi Halli, Shivamogga District, Karnataka 577201"],
+                ["Address", "Bangalore, Karnataka"],
                 ["WhatsApp", "+91 80882 00400"],
                 ["Phone", "+91 80882 00400"],
-                ["Email", "hello@savihallithuppa.com"],
-                ["Kitchen Hours", "Mon – Sat · 7am to 6pm"],
+                ["Email", "savigroupss@gmail.com"],
               ].map(([k, v]) => (
                 <div key={k} className="flex flex-wrap justify-between gap-4 py-4">
                   <dt className="text-[0.65rem] tracking-[0.2em] text-brown uppercase">
@@ -136,7 +165,7 @@ function Contact() {
             <div className="mt-10 overflow-hidden border border-border">
               <iframe
                 title="Savi Halli Thuppa location in Bangalore, Karnataka"
-                src="https://www.google.com/maps?q=Shivamogga,Karnataka&output=embed"
+                src="https://www.google.com/maps?q=Bangalore,Karnataka&output=embed"
                 loading="lazy"
                 className="h-72 w-full"
               />

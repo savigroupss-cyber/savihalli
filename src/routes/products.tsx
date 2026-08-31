@@ -27,22 +27,36 @@ export const Route = createFileRoute("/products")({
 const jars = [
   {
     size: "200 ml",
-    mrp: "₹280",
-    price: "₹230",
+    mrp: "₹349",
+    price: "₹250",
     note: "A first jar, or a travel jar.",
     desc: "Enough for two weeks of dosas and a spoon over rice. Grainy, deep gold, unmistakably wood-fired.",
   },
   {
-    size: "500 ml",
-    mrp: "₹560",
+    size: "400 ml",
+    mrp: "₹699",
     price: "₹499",
-    note: "Our most loved size.",
-    desc: "The jar most families reorder monthly. Balanced for daily tempering, sweets and breakfast.",
+    note: "A small family favourite.",
+    desc: "A balanced option for everyday cooking, breakfast and a few warm sweet moments at home.",
+  },
+  {
+    size: "600 ml",
+    mrp: "₹999",
+    price: "₹750",
+    note: "A dependable everyday jar.",
+    desc: "For households that cook with ghee daily and want a steady stock without the large jar commitment.",
+  },
+  {
+    size: "800 ml",
+    mrp: "₹1,349",
+    price: "₹999",
+    note: "For regular family use.",
+    desc: "Perfect for cooking, serving and gifting during busy weeks when you want a fuller kitchen staple.",
   },
   {
     size: "1 kg",
-    mrp: "₹110",
-    price: "₹999",
+    mrp: "₹1,599",
+    price: "₹1,199",
     note: "For a full kitchen.",
     desc: "For households that cook every meal at home, and for festival months when sweets take over.",
   },
@@ -65,7 +79,7 @@ function Products() {
         <div className="mx-auto max-w-4xl px-5 text-center">
           <p className="eyebrow">Products</p>
           <h1 className="mt-5 font-display text-4xl text-cream sm:text-6xl">
-            One ghee. Three jars.
+            One ghee. Many jars.
           </h1>
           <div className="mx-auto mt-7 rule-gold" />
           <p className="mt-7 text-sm text-cream/70">

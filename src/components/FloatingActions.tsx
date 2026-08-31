@@ -53,7 +53,7 @@ export function FloatingActions() {
           onClick={() => setOpen(true)}
           className="inline-flex items-center gap-2 rounded-full border border-gold bg-forest px-6 py-3 text-xs font-medium tracking-[0.22em] uppercase text-cream transition-colors hover:bg-forest-deep"
         >
-          {count > 0 ? `View Order (${count})` : "Order Now"}
+          {count > 0 ? `Your Orders (${count})` : "Your Orders"}
         </button>
       </div>
     </>

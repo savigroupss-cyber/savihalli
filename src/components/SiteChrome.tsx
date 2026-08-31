@@ -181,29 +181,6 @@ export function SiteFooter() {
             
           </ul>
 
-          <form
-            className="mt-7"
-            onSubmit={(e) => {
-              e.preventDefault();
-              (e.currentTarget as HTMLFormElement).reset();
-            }}
-          >
-            <label className="eyebrow" htmlFor="news">
-              Newsletter
-            </label>
-            <div className="mt-3 flex">
-              <input
-                id="news"
-                type="email"
-                required
-                placeholder="Your email"
-                className="w-full border border-gold/40 bg-transparent px-3 py-2 text-sm text-cream placeholder:text-cream/40 focus:border-gold focus:outline-none"
-              />
-              <button className="border border-l-0 border-gold bg-gold/10 px-4 text-xs tracking-[0.18em] text-gold uppercase transition-colors hover:bg-gold hover:text-forest-deep">
-                Join
-              </button>
-            </div>
-          </form>
         </div>
       </div>
 
