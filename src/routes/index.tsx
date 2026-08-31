@@ -162,7 +162,7 @@ function Home() {
         <div className="absolute inset-0 bg-forest-deep/30" />
 
         <div className="relative z-10 px-6 text-center">
-          <p className="eyebrow">The Taste of Old Karnataka</p>
+          <p className="eyebrow text-cream">The Taste of Old Karnataka</p>
           <h1 className="mt-6 font-display text-5xl leading-[1.05] tracking-[0.14em] text-cream uppercase sm:text-6xl lg:text-7xl">
             Savi Halli
             <span className="block text-gold-gradient">Thuppa</span>
