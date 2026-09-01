@@ -78,9 +78,9 @@ function Farm() {
             </h2>
             <div className="mt-6 rule-gold" />
             <p className="mt-6 text-[0.95rem] leading-relaxed text-brown">
-              Every litre we churn comes from our own twelve native cows in Savi Halli and
-              from two neighbouring families whose animals we have known for years. There
-              is no collection route, no tanker and no pooling.
+              Every litre we churn comes from our own twelve native cows in Savi Halli and from two
+              neighbouring families whose animals we have known for years. There is no collection
+              route, no tanker and no pooling.
             </p>
           </Reveal>
 
@@ -128,8 +128,7 @@ function Farm() {
         />
         <div className="absolute inset-0 flex items-center justify-center bg-forest-deep/55">
           <p className="max-w-2xl px-6 text-center font-display text-2xl text-cream italic sm:text-3xl">
-            “The animals set the pace of this business. We have never once asked them to go
-            faster.”
+            “The animals set the pace of this business. We have never once asked them to go faster.”
           </p>
         </div>
       </section>

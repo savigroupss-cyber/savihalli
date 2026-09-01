@@ -17,8 +17,7 @@ export const Route = createFileRoute("/recipes")({
       { property: "og:title", content: "Karnataka Recipes with Savi Halli Thuppa" },
       {
         property: "og:description",
-        content:
-          "Seven traditional Karnataka dishes cooked with hand-churned village ghee.",
+        content: "Seven traditional Karnataka dishes cooked with hand-churned village ghee.",
       },
     ],
   }),

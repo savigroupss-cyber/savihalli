@@ -30,9 +30,7 @@ function Contact() {
     message: "",
   });
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
-  ) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
@@ -75,8 +73,8 @@ function Contact() {
 
             {sent ? (
               <p className="card-warm mt-9 p-8 text-sm leading-relaxed text-brown">
-                Thank you — your message is with us. We reply from the kitchen, usually
-                within a day.
+                Thank you — your message is with us. We reply from the kitchen, usually within a
+                day.
               </p>
             ) : (
               <form className="mt-9 grid gap-5" onSubmit={handleSubmit}>
@@ -139,9 +137,7 @@ function Contact() {
                 ["Email", "savigroupss@gmail.com"],
               ].map(([k, v]) => (
                 <div key={k} className="flex flex-wrap justify-between gap-4 py-4">
-                  <dt className="text-[0.65rem] tracking-[0.2em] text-brown uppercase">
-                    {k}
-                  </dt>
+                  <dt className="text-[0.65rem] tracking-[0.2em] text-brown uppercase">{k}</dt>
                   <dd className="text-forest">{v}</dd>
                 </div>
               ))}
