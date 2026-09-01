@@ -27,8 +27,7 @@ export function FloatingActions() {
         style={{
           left: pos.x,
           top: pos.y,
-          background:
-            "radial-gradient(circle, oklch(0.716 0.113 78.5 / 0.35) 0%, transparent 65%)",
+          background: "radial-gradient(circle, oklch(0.716 0.113 78.5 / 0.35) 0%, transparent 65%)",
         }}
       />
 

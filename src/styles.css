@@ -98,7 +98,8 @@
   --ring: var(--gold);
 
   --shadow-warm: 0 18px 50px -22px oklch(0.398 0.048 55 / 0.45);
-  --shadow-gold: 0 0 0 1px oklch(0.716 0.113 78.5 / 0.45), 0 22px 60px -28px oklch(0.716 0.113 78.5 / 0.5);
+  --shadow-gold:
+    0 0 0 1px oklch(0.716 0.113 78.5 / 0.45), 0 22px 60px -28px oklch(0.716 0.113 78.5 / 0.5);
   --gradient-forest: linear-gradient(160deg, var(--forest) 0%, var(--forest-deep) 100%);
   --gradient-gold: linear-gradient(100deg, var(--gold) 0%, var(--gold-soft) 50%, var(--gold) 100%);
 

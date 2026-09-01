@@ -83,8 +83,7 @@ function Products() {
           </h1>
           <div className="mx-auto mt-7 rule-gold" />
           <p className="mt-7 text-sm text-cream/70">
-            Delivery available · Dispatched in 48 hours · Monthly subscription on
-            request
+            Delivery available · Dispatched in 48 hours · Monthly subscription on request
           </p>
         </div>
       </section>
@@ -106,12 +105,8 @@ function Products() {
                 </div>
                 <div className="flex flex-1 flex-col p-9">
                   <h2 className="font-display text-3xl text-forest">{j.size}</h2>
-                  <p className="mt-1 text-xs tracking-[0.16em] text-gold uppercase">
-                    {j.note}
-                  </p>
-                  <p className="mt-5 flex-1 text-sm leading-relaxed text-brown">
-                    {j.desc}
-                  </p>
+                  <p className="mt-1 text-xs tracking-[0.16em] text-gold uppercase">{j.note}</p>
+                  <p className="mt-5 flex-1 text-sm leading-relaxed text-brown">{j.desc}</p>
                   <div className="mt-7 flex items-baseline gap-3">
                     <span className="text-sm text-brown line-through">{j.mrp}</span>
                     <span className="font-display text-2xl text-forest">{j.price}</span>
@@ -166,9 +161,9 @@ function Products() {
             <div className="mt-10">
               <p className="eyebrow">How to use</p>
               <p className="mt-4 text-sm leading-relaxed text-brown">
-                A spoon over hot rice with salt. For tempering dal and sambar. Brushed on
-                chapathi and dosa. For kesari bath, holige and Mysore pak. Store in a cool
-                dry place and always use a dry spoon.
+                A spoon over hot rice with salt. For tempering dal and sambar. Brushed on chapathi
+                and dosa. For kesari bath, holige and Mysore pak. Store in a cool dry place and
+                always use a dry spoon.
               </p>
             </div>
           </Reveal>

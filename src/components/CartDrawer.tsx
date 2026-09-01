@@ -67,9 +67,7 @@ export function CartDrawer() {
         }`}
       >
         <div className="surface-forest flex items-center justify-between border-b border-gold/25 px-6 py-5">
-          <p className="font-display text-lg tracking-[0.2em] text-cream uppercase">
-            Your Order
-          </p>
+          <p className="font-display text-lg tracking-[0.2em] text-cream uppercase">Your Order</p>
           <button
             onClick={() => setOpen(false)}
             aria-label="Close cart"
@@ -85,8 +83,8 @@ export function CartDrawer() {
               <p className="font-display text-2xl text-forest">Order sent</p>
               <div className="mx-auto mt-5 rule-gold" />
               <p className="mt-5 text-sm leading-relaxed text-brown">
-                Your order has opened in WhatsApp. Press send there and we will confirm
-                from the kitchen shortly.
+                Your order has opened in WhatsApp. Press send there and we will confirm from the
+                kitchen shortly.
               </p>
               <button
                 onClick={() => {
@@ -145,9 +143,7 @@ export function CartDrawer() {
               </ul>
 
               <div className="flex items-center justify-between">
-                <span className="text-[0.7rem] tracking-[0.22em] text-brown uppercase">
-                  Total
-                </span>
+                <span className="text-[0.7rem] tracking-[0.22em] text-brown uppercase">Total</span>
                 <span className="font-display text-2xl text-forest">₹{total}</span>
               </div>
 
@@ -168,9 +164,7 @@ export function CartDrawer() {
                         type={f.type}
                         required={f.required}
                         value={form[f.id] ?? ""}
-                        onChange={(e) =>
-                          setForm((p) => ({ ...p, [f.id]: e.target.value }))
-                        }
+                        onChange={(e) => setForm((p) => ({ ...p, [f.id]: e.target.value }))}
                         className="mt-2 w-full border border-input bg-card px-4 py-3 text-sm text-forest focus:border-gold focus:outline-none"
                       />
                     </div>

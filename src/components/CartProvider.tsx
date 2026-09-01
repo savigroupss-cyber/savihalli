@@ -1,10 +1,4 @@
-import {
-  createContext,
-  useContext,
-  useMemo,
-  useState,
-  type ReactNode,
-} from "react";
+import { createContext, useContext, useMemo, useState, type ReactNode } from "react";
 
 export type CartItem = { size: string; price: number; qty: number };
 
@@ -43,8 +37,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
       add: (size, price) => {
         setItems((prev) => {
           const found = prev.find((i) => i.size === size);
-          if (found)
-            return prev.map((i) => (i.size === size ? { ...i, qty: i.qty + 1 } : i));
+          if (found) return prev.map((i) => (i.size === size ? { ...i, qty: i.qty + 1 } : i));
           return [...prev, { size, price, qty: 1 }];
         });
         setOpen(true);
