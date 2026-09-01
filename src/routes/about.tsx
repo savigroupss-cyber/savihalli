@@ -48,32 +48,27 @@ function About() {
         <div className="mx-auto grid max-w-7xl items-start gap-16 px-5 lg:grid-cols-2">
           <Reveal>
             <p className="eyebrow">Three Generations</p>
-            <h2 className="mt-5 font-display text-4xl text-forest">
-              It began with Ajji's kitchen
-            </h2>
+            <h2 className="mt-5 font-display text-4xl text-forest">It began with Ajji's kitchen</h2>
             <div className="mt-6 rule-gold" />
             <div className="mt-7 space-y-5 text-[0.95rem] leading-relaxed text-brown">
               <p>
-                Our grandmother — Ajji, as the whole street called her — kept two clay
-                pots on the shelf beside her hearth. One held curd for the morning, the
-                other held ghee for the year. Neighbours came to her not for a product but
-                for a smell they recognised.
+                Our grandmother — Ajji, as the whole street called her — kept two clay pots on the
+                shelf beside her hearth. One held curd for the morning, the other held ghee for the
+                year. Neighbours came to her not for a product but for a smell they recognised.
               </p>
               <p>
-                Her daughter carried the churner. Her grandchildren carried it further,
-                and in 2019 we began putting the same ghee into jars for families outside
-                the village who wrote to ask for it.
+                Her daughter carried the churner. Her grandchildren carried it further, and in 2019
+                we began putting the same ghee into jars for families outside the village who wrote
+                to ask for it.
               </p>
               <p>
-                Nothing about the method changed when we started selling it. Same herd,
-                same wooden bilona, same wood fire, same clay. The only new thing is the
-                label.
+                Nothing about the method changed when we started selling it. Same herd, same wooden
+                bilona, same wood fire, same clay. The only new thing is the label.
               </p>
               <p>
-                Savi Halli Thuppa is a celebration of Karnataka's village heritage —
-                crafted from pure cow milk, prepared using traditional methods, and
-                inspired by the way generations preserved and cherished ghee before modern
-                conveniences.
+                Savi Halli Thuppa is a celebration of Karnataka's village heritage — crafted from
+                pure cow milk, prepared using traditional methods, and inspired by the way
+                generations preserved and cherished ghee before modern conveniences.
               </p>
             </div>
           </Reveal>
@@ -104,8 +99,7 @@ function About() {
           <Reveal>
             <p className="eyebrow">Our Promise</p>
             <p className="mt-8 font-display text-3xl leading-snug text-cream italic sm:text-4xl">
-              “Every jar carries the aroma, taste and warmth of an authentic village
-              kitchen.”
+              “Every jar carries the aroma, taste and warmth of an authentic village kitchen.”
             </p>
             <div className="mx-auto mt-8 rule-gold" />
             <Link

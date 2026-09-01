@@ -14,12 +14,11 @@ The Taste of Old Karnataka
 
 Color Palette
 
-Dark Forest Green      #0B3D2E
-Cream                  #F8F2E8
-Gold                   #C89B3C
-Brown                  #5A3E2B
-White                  #FFFFFF
-
+Dark Forest Green #0B3D2E
+Cream #F8F2E8
+Gold #C89B3C
+Brown #5A3E2B
+White #FFFFFF
 
 Fonts
 

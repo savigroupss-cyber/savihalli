@@ -14,11 +14,7 @@ function CartButton({ mobile = false }: { mobile?: boolean }) {
       }`}
     >
       <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor">
-        <path
-          strokeWidth="1.5"
-          d="M6 7h12l-1 13H7L6 7Zm3 0a3 3 0 1 1 6 0"
-          strokeLinecap="round"
-        />
+        <path strokeWidth="1.5" d="M6 7h12l-1 13H7L6 7Zm3 0a3 3 0 1 1 6 0" strokeLinecap="round" />
       </svg>
       Cart{count > 0 ? ` (${count})` : ""}
     </button>
@@ -49,9 +45,7 @@ export function SiteHeader() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
-        solid
-          ? "surface-forest border-b border-gold/25 py-3 shadow-[var(--shadow-warm)]"
-          : "py-6"
+        solid ? "surface-forest border-b border-gold/25 py-3 shadow-[var(--shadow-warm)]" : "py-6"
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5">
@@ -130,13 +124,11 @@ export function SiteFooter() {
           </p>
           <div className="rule-gold mt-4" />
           <p className="mt-5 max-w-md text-sm leading-relaxed text-cream/70">
-            A celebration of Karnataka's village heritage — crafted from pure cow milk,
-            prepared using traditional methods, and inspired by the way generations
-            preserved and cherished ghee before modern conveniences.
+            A celebration of Karnataka's village heritage — crafted from pure cow milk, prepared
+            using traditional methods, and inspired by the way generations preserved and cherished
+            ghee before modern conveniences.
           </p>
-          <p className="mt-6 text-xs tracking-[0.2em] text-gold uppercase">
-             Karnataka · India
-          </p>
+          <p className="mt-6 text-xs tracking-[0.2em] text-gold uppercase">Karnataka · India</p>
         </div>
 
         <div>
@@ -172,22 +164,19 @@ export function SiteFooter() {
                 Instagram
               </a>
             </li>
-            
+
             <li>
               <a href="mailto:savigroupss@gmail.com" className="hover:text-gold">
                 savigroupss@gmail.com
               </a>
             </li>
-            
           </ul>
-
         </div>
       </div>
 
       <div className="border-t border-gold/15 px-5 py-6">
         <p className="mx-auto max-w-7xl text-[0.7rem] tracking-[0.18em] text-cream/45 uppercase">
-          © {new Date().getFullYear()} Savi Halli Thuppa · Pure Cow Ghee from the Heart of
-          Karnataka
+          © {new Date().getFullYear()} Savi Halli Thuppa · Pure Cow Ghee from the Heart of Karnataka
         </p>
       </div>
     </footer>
