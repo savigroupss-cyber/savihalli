@@ -45,25 +45,72 @@ export const Route = createFileRoute("/")({
 });
 
 const differences = [
-  { icon: "", title: "Pure Cow Milk", text: "Single-source milk from our own village herd, collected fresh each morning." },
-  { icon: "", title: "No Additives", text: "Nothing added, nothing removed. Milk, patience and firewood." },
-  { icon: "", title: "Stored in Mud Pot", text: "Earthen pots, the way our grandmothers kept ghee for generations." },
-  { icon: "", title: "Traditional Bilona Churning", text: "Curd hand-churned with a wooden churner — never machine separated." },
-  { icon: "", title: "Slow Heated", text: "Simmered on a gentle wood fire until the aroma turns golden." },
-  { icon: "", title: "Made in Small Batches", text: "A few litres at a time, watched over by hand from start to jar." },
+  {
+    icon: "",
+    title: "Pure Cow Milk",
+    text: "Single-source milk from our own village herd, collected fresh each morning.",
+  },
+  {
+    icon: "",
+    title: "No Additives",
+    text: "Nothing added, nothing removed. Milk, patience and firewood.",
+  },
+  {
+    icon: "",
+    title: "Stored in Mud Pot",
+    text: "Earthen pots, the way our grandmothers kept ghee for generations.",
+  },
+  {
+    icon: "",
+    title: "Traditional Bilona Churning",
+    text: "Curd hand-churned with a wooden churner — never machine separated.",
+  },
+  {
+    icon: "",
+    title: "Slow Heated",
+    text: "Simmered on a gentle wood fire until the aroma turns golden.",
+  },
+  {
+    icon: "",
+    title: "Made in Small Batches",
+    text: "A few litres at a time, watched over by hand from start to jar.",
+  },
 ];
 
 const steps = [
-  { n: "01", t: "Fresh Cow Milk", d: "Milked at dawn from grass-fed native cows and brought straight to the kitchen." },
-  { n: "02", t: "Curd", d: "Set overnight in earthen vessels with a spoon of the previous day's culture." },
-  { n: "03", t: "Hand Churned Butter", d: "Churned by hand with a wooden bilona until white butter rises." },
-  { n: "04", t: "Slow Fire", d: "The butter simmers over firewood — never rushed, never overheated." },
-  { n: "05", t: "Pure Golden Ghee", d: "Clear golden ghee is strained off with its grainy aroma intact." },
-  { n: "06", t: "Stored Naturally in Clay Pot", d: "Rested in mud pots so the aroma settles the way it always has." },
+  {
+    n: "01",
+    t: "Fresh Cow Milk",
+    d: "Milked at dawn from grass-fed native cows and brought straight to the kitchen.",
+  },
+  {
+    n: "02",
+    t: "Curd",
+    d: "Set overnight in earthen vessels with a spoon of the previous day's culture.",
+  },
+  {
+    n: "03",
+    t: "Hand Churned Butter",
+    d: "Churned by hand with a wooden bilona until white butter rises.",
+  },
+  {
+    n: "04",
+    t: "Slow Fire",
+    d: "The butter simmers over firewood — never rushed, never overheated.",
+  },
+  {
+    n: "05",
+    t: "Pure Golden Ghee",
+    d: "Clear golden ghee is strained off with its grainy aroma intact.",
+  },
+  {
+    n: "06",
+    t: "Stored Naturally in Clay Pot",
+    d: "Rested in mud pots so the aroma settles the way it always has.",
+  },
 ];
 
 const mapPlaces = [
-
   {
     key: "Our Village",
     body: "Savi Halli sits in the green belt of all over Karnataka — red-tiled homes, areca groves and a temple pond that has fed the same fields for generations.",
@@ -219,9 +266,9 @@ function Home() {
             <div className="mt-6 rule-gold" />
             <div className="mt-7 space-y-5 text-[0.95rem] leading-relaxed text-brown">
               <p>
-                Every home in Karnataka preserved ghee naturally in clay pots. The pot sat
-                in a cool corner of the kitchen, and the aroma of the morning's churning
-                stayed in it for months.
+                Every home in Karnataka preserved ghee naturally in clay pots. The pot sat in a cool
+                corner of the kitchen, and the aroma of the morning's churning stayed in it for
+                months.
               </p>
               <p>At Savi Halli Thuppa, we continue the same tradition.</p>
               <ul className="grid gap-3 font-display text-xl text-forest italic">
@@ -230,8 +277,8 @@ function Home() {
                 <li>No preservatives.</li>
               </ul>
               <p>
-                Just pure cow milk transformed into golden ghee using time-honoured
-                methods — the same ones our grandmother used, in the same village.
+                Just pure cow milk transformed into golden ghee using time-honoured methods — the
+                same ones our grandmother used, in the same village.
               </p>
             </div>
             <Link
@@ -323,17 +370,14 @@ function Home() {
             </h2>
             <div className="mt-6 rule-gold" />
             <div className="mt-8 space-y-5 text-[0.95rem] leading-relaxed text-cream/75">
+              <p>Instead of refrigeration, our ancestors preserved ghee in earthen pots.</p>
               <p>
-                Instead of refrigeration, our ancestors preserved ghee in earthen pots.
+                Clay naturally helps regulate temperature and protects the aroma of the ghee without
+                relying on artificial cold storage.
               </p>
               <p>
-                Clay naturally helps regulate temperature and protects the aroma of the
-                ghee without relying on artificial cold storage.
-              </p>
-              <p>
-                Our traditional storage method is inspired by these age-old practices to
-                preserve authenticity — the grain, the colour and the smell of a village
-                kitchen.
+                Our traditional storage method is inspired by these age-old practices to preserve
+                authenticity — the grain, the colour and the smell of a village kitchen.
               </p>
             </div>
           </Reveal>
@@ -350,9 +394,10 @@ function Home() {
             </h2>
             <div className="mx-auto mt-6 rule-gold" />
             <p className="mx-auto mt-6 max-w-2xl text-[0.95rem] leading-relaxed text-brown">
-              Our kitchen is inspired by the rich heritage of Karnataka, while our milk comes from trusted village families across the state. 
-              From the fertile northern plains to the lush Western Ghats and the coastal belt,
-               we bring together the goodness of Karnataka’s diverse landscapes to create pure, traditional ghee.
+              Our kitchen is inspired by the rich heritage of Karnataka, while our milk comes from
+              trusted village families across the state. From the fertile northern plains to the
+              lush Western Ghats and the coastal belt, we bring together the goodness of Karnataka’s
+              diverse landscapes to create pure, traditional ghee.
             </p>
           </Reveal>
 
@@ -368,7 +413,6 @@ function Home() {
                 />
               </div>
             </Reveal>
-
 
             <Reveal delay={120}>
               <div className="flex flex-wrap gap-2">
@@ -387,9 +431,7 @@ function Home() {
                 ))}
               </div>
               <div className="card-warm mt-8 p-9">
-                <h3 className="font-display text-3xl text-forest">
-                  {mapPlaces[place]!.key}
-                </h3>
+                <h3 className="font-display text-3xl text-forest">{mapPlaces[place]!.key}</h3>
                 <div className="mt-5 rule-gold" />
                 <p className="mt-5 text-[0.95rem] leading-relaxed text-brown">
                   {mapPlaces[place]!.body}
@@ -405,9 +447,7 @@ function Home() {
         <div className="mx-auto max-w-7xl px-5">
           <Reveal className="text-center">
             <p className="eyebrow">Our Jars</p>
-            <h2 className="mt-5 font-display text-4xl text-forest sm:text-5xl">
-              Choose your jar
-            </h2>
+            <h2 className="mt-5 font-display text-4xl text-forest sm:text-5xl">Choose your jar</h2>
             <div className="mx-auto mt-6 rule-gold" />
           </Reveal>
 
@@ -458,9 +498,7 @@ function Home() {
               <p className="font-display text-6xl text-gold">
                 <Counter value={c.v} />
               </p>
-              <p className="mt-4 text-[0.7rem] tracking-[0.28em] text-cream/70 uppercase">
-                {c.l}
-              </p>
+              <p className="mt-4 text-[0.7rem] tracking-[0.28em] text-cream/70 uppercase">{c.l}</p>
             </Reveal>
           ))}
         </div>
@@ -471,9 +509,7 @@ function Home() {
         <div className="mx-auto max-w-7xl px-5">
           <Reveal className="text-center">
             <p className="eyebrow">Why Families Trust Us</p>
-            <h2 className="mt-5 font-display text-4xl text-forest sm:text-5xl">
-              Customer reviews
-            </h2>
+            <h2 className="mt-5 font-display text-4xl text-forest sm:text-5xl">Customer reviews</h2>
             <div className="mx-auto mt-6 rule-gold" />
           </Reveal>
 
@@ -534,9 +570,7 @@ function Home() {
         <div className="mx-auto max-w-7xl px-5">
           <Reveal className="text-center">
             <p className="eyebrow">Gallery</p>
-            <h2 className="mt-5 font-display text-4xl text-cream sm:text-5xl">
-              From our village
-            </h2>
+            <h2 className="mt-5 font-display text-4xl text-cream sm:text-5xl">From our village</h2>
             <div className="mx-auto mt-6 rule-gold" />
           </Reveal>
 

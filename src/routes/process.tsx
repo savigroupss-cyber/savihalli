@@ -75,8 +75,8 @@ function Process() {
           </h1>
           <div className="mx-auto mt-7 rule-gold" />
           <p className="mt-7 text-sm leading-relaxed text-cream/70">
-            Six stages, one kitchen, roughly fourteen hours from milking to jar. This is
-            the full account — photographed and filmed on the days we churn.
+            Six stages, one kitchen, roughly fourteen hours from milking to jar. This is the full
+            account — photographed and filmed on the days we churn.
           </p>
         </div>
       </section>
@@ -100,16 +100,12 @@ function Process() {
               />
             </figure>
             <Reveal
-              className={`px-6 py-20 sm:px-16 ${
-                i % 2 === 1 ? "bg-secondary" : "bg-background"
-              }`}
+              className={`px-6 py-20 sm:px-16 ${i % 2 === 1 ? "bg-secondary" : "bg-background"}`}
             >
               <p className="eyebrow">Step {s.n}</p>
               <h2 className="mt-5 font-display text-3xl text-forest sm:text-4xl">{s.t}</h2>
               <div className="mt-6 rule-gold" />
-              <p className="mt-6 max-w-xl text-[0.95rem] leading-relaxed text-brown">
-                {s.d}
-              </p>
+              <p className="mt-6 max-w-xl text-[0.95rem] leading-relaxed text-brown">{s.d}</p>
             </Reveal>
           </div>
         ))}
