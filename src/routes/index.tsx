@@ -83,11 +83,11 @@ const mapPlaces = [
 ];
 
 const jars = [
-  { size: "200 ml", price: "₹250", note: "For a first taste" },
-  { size: "400 ml", price: "₹499", note: "A regular family favourite" },
-  { size: "600 ml", price: "₹750", note: "Everyday cooking jar" },
-  { size: "800 ml", price: "₹999", note: "For regular family use" },
-  { size: "1 kg", price: "₹1,199", note: "For a full kitchen" },
+  { size: "200 ml", price: "₹280", note: "For a first taste" },
+  { size: "400 ml", price: "₹560", note: "A regular family favourite" },
+  { size: "600 ml", price: "₹840", note: "Everyday cooking jar" },
+  { size: "800 ml", price: "₹1,120", note: "For regular family use" },
+  { size: "1 kg", price: "₹1,400", note: "For a full kitchen" },
 ];
 
 const reviews = [
