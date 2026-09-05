@@ -83,11 +83,11 @@ const mapPlaces = [
 ];
 
 const jars = [
-  { size: "200 ml", price: "₹280", note: "For a first taste" },
-  { size: "400 ml", price: "₹560", note: "A regular family favourite" },
-  { size: "600 ml", price: "₹840", note: "Everyday cooking jar" },
-  { size: "800 ml", price: "₹1,120", note: "For regular family use" },
-  { size: "1 kg", price: "₹1,400", note: "For a full kitchen" },
+  { size: "200 ml", mrp: "₹350", price: "₹280", note: "For a first taste" },
+  { size: "400 ml", mrp: "₹700", price: "₹560", note: "A regular family favourite" },
+  { size: "600 ml", mrp: "₹1,050", price: "₹840", note: "Everyday cooking jar" },
+  { size: "800 ml", mrp: "₹1,400", price: "₹1,120", note: "For regular family use" },
+  { size: "1 kg", mrp: "₹1,750", price: "₹1,400", note: "For a full kitchen" },
 ];
 
 const reviews = [
@@ -430,7 +430,13 @@ function Home() {
                     <p className="mt-1 text-xs tracking-[0.16em] text-muted-foreground uppercase">
                       {j.note}
                     </p>
-                    <p className="mt-5 font-display text-xl text-gold">{j.price}</p>
+                    <div className="mt-5 flex items-center gap-2">
+                      <span className="text-sm text-brown line-through">{j.mrp}</span>
+                      <span className="text-[0.65rem] font-semibold tracking-[0.12em] text-gold uppercase">
+                        20% Off
+                      </span>
+                    </div>
+                    <p className="mt-1 font-display text-xl text-gold">{j.price}</p>
                     <button
                       onClick={() => add(j.size, parsePrice(j.price))}
                       className="mt-6 block w-full rounded-full border border-gold bg-forest py-3 text-center text-[0.7rem] tracking-[0.22em] text-cream uppercase transition-colors hover:bg-gold hover:text-forest-deep"

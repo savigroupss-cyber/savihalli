@@ -114,6 +114,9 @@ function Products() {
                   </p>
                   <div className="mt-7 flex items-baseline gap-3">
                     <span className="text-sm text-brown line-through">{j.mrp}</span>
+                    <span className="text-[0.65rem] font-semibold tracking-[0.12em] text-gold uppercase">
+                      20% Off
+                    </span>
                     <span className="font-display text-2xl text-forest">{j.price}</span>
                   </div>
                   <div className="mt-6 flex gap-3">
